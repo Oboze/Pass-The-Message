@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --gap:1rem;
+}
+
+body{
+    background-color: #87CEEB;
+}
+#container{
+    
+    display:flex;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+
+}
+#message-holder{
+    background-color: #F1F1F1;
+    display:flex;
+    flex-direction: column;
+    row-gap:var(--gap);
+    padding:5rem;
+}
+
+#message-heading, #message-delivered-heading{
+    text-align: center;
+    font-size:1.5em;
+}
+
+button{
+    background-color: #87CEEB;
+    color:white;
+    border-radius: 5px;
+    padding:0.5em;
+    font-weight:900;
+    border-color:#98AFC7;
+    display:block;
+    margin:1.5rem auto;
+
+}
+
+#last-message{
+    color:#87CEEB;
+    font-size:1.2rem;
+    font-weight:bold;
+    text-align: center;
+}
+
+input[type="text"]{
+    height:3rem;
+    font-size: larger;
+}
+.error{
+    display:none;
+    background-color: red;
+    color:white;
+    padding:3px;
+    text-align: center;
+    font-weight:900;
+}
+
+.show{
+    display:block;
+}
